@@ -65,6 +65,8 @@ int I2CReadData (XIicPs *i2c , SensorData *measuredData){
 		return XST_FAILURE;
 	}
 
+	usleep(Write_CMD_Time);
+
 	u16 rawTempData = (recvBuff[0]<<8) | recvBuff[1];
 	u16 rawHumData =  (recvBuff[3]<<8) | recvBuff[4];
 

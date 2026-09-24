@@ -21,7 +21,7 @@
 #define sClk_I2C_PS				100000
 #define SendBuffData			2
 #define RecvBuffData			6
-#define Write_CMD_Time			1000000
+#define Write_CMD_Time			15000
 
 
 typedef struct {
